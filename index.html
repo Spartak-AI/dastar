@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DASTAR — кухни на заказ в Алматы</title>
+  <meta name="description" content="Кухни на заказ в Алматы: замер, 3D-проект, собственное производство, доставка и монтаж. Рассчитайте стоимость кухни онлайн.">
+  <meta name="theme-color" content="#131110">
+  <meta property="og:title" content="DASTAR — кухни на заказ в Алматы">
+  <meta property="og:description" content="Кухня под вашу стену: от замера до ужина в восемь.">
+  <meta property="og:image" content="assets/img/a3.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/frames/desktop/f_0001.webp" media="(min-width: 761px)">
+  <link rel="preload" as="image" href="assets/frames/mobile/f_0001.webp" media="(max-width: 760px)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23131110'/%3E%3Cpath d='M10 8v16h5a8 8 0 0 0 0-16z' fill='none' stroke='%23b98f78' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="estilo.css?v=12">
+  <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.DASTAR_OK)document.documentElement.classList.remove("js")},4000);</script>
+</head>
+<body>
+
+<header class="topo">
+  <a class="marca" href="#inicio">DASTAR<small>кухни на заказ</small></a>
+  <nav class="menu" aria-label="Разделы">
+    <a href="#projects">Проекты</a>
+    <a href="#calc">Расчёт</a>
+    <a href="#materials">Материалы</a>
+    <a href="#steps">Этапы</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <div class="topo-dir">
+    <a class="topo-tel" href="tel:+77075434328"><b>+7 (707) 543-43-28</b><span>Ежедневно 9:00–20:00</span></a>
+    <a class="btn btn--linha btn--topo js-whats" href="#" data-texto="Хочу оставить заявку на кухню.">Оставить заявку</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── Кухня собирается при прокрутке ───────────────────────────── -->
+  <section class="cine" id="inicio" aria-label="Как появляется кухня">
+    <div class="cine-palco">
+      <div class="cine-tela">
+        <canvas class="cine-canvas" aria-hidden="true"></canvas>
+        <div class="cine-veu" aria-hidden="true"></div>
+
+        <div class="etapas">
+          <article class="etapa">
+            <span class="etapa-num">01 · Замер</span>
+            <h1>Листайте — и&nbsp;кухня встанет на&nbsp;место</h1>
+            <p>Сначала пустая стена, розетки и выводы воды. Замерщик снимает размеры с точностью до миллиметра, и проект строится под вашу комнату.</p>
+            <button class="btn btn--cheio" type="button" data-quiz>Рассчитать кухню</button>
+          </article>
+          <article class="etapa">
+            <span class="etapa-num">02 · Корпус</span>
+            <h2>Подогнано к стене</h2>
+            <p>Нижние модули встают в линию без зазоров, колонна с духовкой уходит в нишу до потолка. Корпуса из ЛДСП 18 мм, кромка 2 мм.</p>
+          </article>
+          <article class="etapa">
+            <span class="etapa-num">03 · Камень</span>
+            <h2>Остров одной плитой</h2>
+            <p>Столешница из кварцита с боковинами до пола. Рисунок камня продолжается по верху и торцам без шва.</p>
+          </article>
+          <article class="etapa">
+            <span class="etapa-num">04 · Свет</span>
+            <h2>Тёплый свет по вечерам</h2>
+            <p>Подвесы над островом и лента под полкой. Свет продумываем на этапе проекта, чтобы не тянуть провода по готовой стене.</p>
+          </article>
+          <article class="etapa">
+            <span class="etapa-num">05 · Готово</span>
+            <h2>Ужин в восемь</h2>
+            <p>Стулья у острова, лимоны на столе. Монтажники увозят упаковку, а вы готовите первый ужин на новой кухне.</p>
+            <a class="btn btn--cheio" href="#projects">Смотреть проекты</a>
+          </article>
+        </div>
+
+        <div class="cine-rodape">
+          <span>Алматы · кухни на заказ</span>
+          <div class="cine-barra" aria-hidden="true"><i></i></div>
+          <span class="cine-dica">Листайте ↓</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── О компании: бенто ─────────────────────────────────────────── -->
+  <section class="painel revelar" id="about">
+    <div class="bento">
+      <div class="bento-intro">
+        <span class="rotulo">О компании</span>
+        <h2>Качество и&nbsp;надёжность</h2>
+        <p>Проектируем и делаем кухни сами: от замера до монтажа отвечает одна команда. Детали не уходят на сторону, поэтому срок в договоре реальный.</p>
+      </div>
+      <article class="bento-card bento-card--claro">
+        <div class="avatares" aria-hidden="true"><img src="assets/img/team1.webp" alt=""><img src="assets/img/team2.webp" alt=""><img src="assets/img/team3.webp" alt=""><img src="assets/img/team4.webp" alt=""><i>+41</i></div>
+        <b>45 человек в штате</b>
+        <p>Дизайнеры, замерщики, технологи и монтажники. Без субподряда.</p>
+      </article>
+      <figure class="bento-foto">
+        <img src="assets/img/b1.webp" alt="Цех DASTAR: раскроечный станок с ЧПУ и стопки готовых фасадов" loading="lazy" width="1400" height="774">
+        <figcaption>Свой цех 1 200 м² в Алматы</figcaption>
+      </figure>
+      <a class="bento-card bento-card--acento js-whats" href="#" data-texto="Хочу узнать о компании подробнее.">
+        <b>Узнать больше о&nbsp;компании</b>
+        <span class="seta" aria-hidden="true">↗</span>
+      </a>
+      <article class="bento-card bento-card--claro">
+        <b>Дизайнерам и&nbsp;застройщикам</b>
+        <p>Делаем кухни по чужим проектам и для жилых комплексов: спецификация, сроки, закрывающие документы.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── Реализованные проекты ─────────────────────────────────────── -->
+  <section class="painel revelar" id="projects">
+    <div class="painel-topo">
+      <div>
+        <span class="rotulo">Портфолио · наши работы</span>
+        <h2>Кухни, которые мы сделали</h2>
+      </div>
+      <p class="painel-nota">Готовые кухни в квартирах и домах Алматы. Нажмите на фото, чтобы посмотреть материалы и цену.</p>
+    </div>
+    <div class="projetos"><!-- карточки из dados.js --></div>
+    <div class="todos">
+      <div class="todos-fotos" aria-hidden="true"><img src="assets/img/a7_m.webp" alt=""><img src="assets/img/a8_m.webp" alt=""><img src="assets/img/a9_m.webp" alt=""></div>
+      <div class="todos-txt"><b>Все проекты</b><span>Не нашли подходящий вариант? Посмотрите остальные работы</span></div>
+      <button class="btn btn--escuro js-todos" type="button">Показать все</button>
+    </div>
+  </section>
+
+  <!-- ── До и после: выполненные работы ────────────────────────────── -->
+  <section class="painel revelar" id="works">
+    <div class="painel-topo">
+      <div>
+        <span class="rotulo">Выполненные работы</span>
+        <h2>До и после</h2>
+      </div>
+      <p class="painel-nota">Та же комната до монтажа и в день сдачи. Потяните ползунок, чтобы сравнить.</p>
+    </div>
+    <div class="antes-depois">
+      <div class="ad-palco" style="--pos: 50%">
+        <img class="ad-depois" src="assets/img/a3.webp" alt="После: кухня «Графит и камень» с островом" width="1400" height="774" loading="lazy">
+        <img class="ad-antes" src="assets/img/a3_antes.webp" alt="До: та же комната без кухни, голые стены и выводы воды" width="1400" height="774" loading="lazy">
+        <span class="ad-tag ad-tag--antes">До</span>
+        <span class="ad-tag ad-tag--depois">После</span>
+        <input class="ad-range" type="range" min="0" max="100" value="50" aria-label="Сравнить до и после">
+        <span class="ad-linha" aria-hidden="true"><i>⟷</i></span>
+      </div>
+      <div class="ad-lista" role="tablist" aria-label="Выполненные работы">
+        <button type="button" role="tab" aria-selected="true" data-id="a3"><img src="assets/img/a3_m.webp" alt=""><span><b>Графит и камень</b><small>Горный Гигант · 22 м² · 31 день</small></span></button>
+        <button type="button" role="tab" aria-selected="false" data-id="a6"><img src="assets/img/a6_m.webp" alt=""><span><b>Орех</b><small>Медеуский район · 15 м² · 27 дней</small></span></button>
+        <button type="button" role="tab" aria-selected="false" data-id="a1"><img src="assets/img/a1_m.webp" alt=""><span><b>Дуб у окна</b><small>Бостандыкский район · 14 м² · 24 дня</small></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Не нашли вариант: каталог ─────────────────────────────────── -->
+  <section class="painel chamada revelar" id="catalog">
+    <img class="chamada-foto" src="assets/img/b5.webp" alt="" loading="lazy" width="1400" height="774">
+    <div class="chamada-texto">
+      <span class="rotulo">Каталог кухонь 2026</span>
+      <h2>Не нашли подходящий вариант?</h2>
+      <p>Пришлём в WhatsApp каталог с ценами, материалами и планировками. Дизайнер подберёт кухни под вашу планировку.</p>
+      <form class="mini-form js-form" data-tipo="catalogo" novalidate>
+        <label class="campo"><span class="sr">Имя</span><input name="nome" autocomplete="name" placeholder="Ваше имя"></label>
+        <label class="campo"><span class="sr">Телефон</span><input name="tel" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+        <button class="btn btn--cheio" type="submit">Получить каталог</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── Калькулятор ───────────────────────────────────────────────── -->
+  <section class="painel revelar" id="calc">
+    <div class="calc">
+      <div class="calc-intro">
+        <span class="rotulo">Онлайн-расчёт</span>
+        <h2>Рассчитайте стоимость</h2>
+        <p>Выберите форму, размеры и материалы. Цена пересчитывается сразу, точную смету дизайнер сделает после замера.</p>
+        <img class="calc-foto" src="assets/img/a4.webp" alt="Угловая бежевая кухня с рифлёными стеклянными шкафами" loading="lazy" width="1400" height="774">
+      </div>
+      <form class="calc-form" novalidate>
+        <fieldset>
+          <legend><b>1</b> Форма кухни</legend>
+          <div class="formas">
+            <label><input type="radio" name="forma" value="Прямая" checked><span><svg viewBox="0 0 48 32" aria-hidden="true"><rect x="4" y="6" width="40" height="8"/></svg>Прямая</span></label>
+            <label><input type="radio" name="forma" value="Угловая"><span><svg viewBox="0 0 48 32" aria-hidden="true"><path d="M4 6h40v8H12v14H4z"/></svg>Угловая</span></label>
+            <label><input type="radio" name="forma" value="П-образная"><span><svg viewBox="0 0 48 32" aria-hidden="true"><path d="M4 6h40v22h-8V14H12v14H4z"/></svg>П-образная</span></label>
+            <label><input type="radio" name="forma" value="С островом"><span><svg viewBox="0 0 48 32" aria-hidden="true"><rect x="4" y="4" width="40" height="7"/><rect x="14" y="19" width="20" height="8"/></svg>С островом</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><b>2</b> Размеры, м</legend>
+          <div class="medidas">
+            <label class="campo"><span>Сторона А</span><input name="a" type="number" min="1" max="12" step="0.1" value="3.2" inputmode="decimal"></label>
+            <label class="campo" data-lado="b"><span>Сторона Б</span><input name="b" type="number" min="0.6" max="8" step="0.1" value="2.0" inputmode="decimal"></label>
+            <label class="campo" data-lado="c"><span>Сторона В</span><input name="c" type="number" min="0.6" max="8" step="0.1" value="2.0" inputmode="decimal"></label>
+            <label class="campo" data-lado="i"><span>Остров</span><input name="i" type="number" min="1" max="4" step="0.1" value="2.0" inputmode="decimal"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><b>3</b> Материал фасадов</legend>
+          <div class="chips">
+            <label><input type="radio" name="fasad" value="ЛДСП" data-k="1" checked><span>ЛДСП</span></label>
+            <label><input type="radio" name="fasad" value="МДФ, эмаль" data-k="1.45"><span>МДФ, эмаль</span></label>
+            <label><input type="radio" name="fasad" value="Пластик Fenix" data-k="1.6"><span>Fenix</span></label>
+            <label><input type="radio" name="fasad" value="Шпон" data-k="1.85"><span>Шпон</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><b>4</b> Столешница и верх</legend>
+          <div class="chips">
+            <label><input type="radio" name="tampo" value="Компакт-плита" data-m="0" checked><span>Компакт-плита</span></label>
+            <label><input type="radio" name="tampo" value="Кварц" data-m="95000"><span>Кварц</span></label>
+            <label><input type="radio" name="tampo" value="Кварцит" data-m="170000"><span>Кварцит</span></label>
+            <label><input type="checkbox" name="topo" value="Верхние шкафы" checked><span>Верхние шкафы</span></label>
+          </div>
+        </fieldset>
+        <div class="calc-resultado">
+          <div class="calc-soma">
+            <span>Предварительно</span>
+            <output class="calc-preco" aria-live="polite">—</output>
+            <small>Длина кухни <b class="calc-metros">—</b> · без техники и мойки</small>
+          </div>
+          <div class="calc-envio">
+            <label class="campo"><span class="sr">Телефон</span><input name="tel" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+            <button class="btn btn--cheio" type="submit">Получить точный расчёт</button>
+          </div>
+          <p class="form-status" role="status"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── Преимущества: бенто ───────────────────────────────────────── -->
+  <section class="painel revelar" id="why">
+    <span class="rotulo">Почему мы</span>
+    <h2 class="titulo-sec">Преимущества работы с&nbsp;нами</h2>
+    <div class="vantagens">
+      <article class="v-card v-card--claro v-card--img">
+        <img src="assets/img/v_prazo.webp" alt="Подписанный договор и календарь с отмеченной датой монтажа на каменной столешнице" loading="lazy" width="900" height="675">
+        <div>
+          <h3>Твёрдые сроки</h3>
+          <p>Срок изготовления прописан в договоре. За каждый день задержки — неустойка.</p>
+        </div>
+      </article>
+      <article class="v-card v-card--claro v-card--img">
+        <img src="assets/img/v_blum.webp" alt="Скрытая петля с доводчиком внутри дубового фасада" loading="lazy" width="900" height="675">
+        <div>
+          <h3>Фурнитура Blum</h3>
+          <p>Петли и ящики с доводчиками, гарантия производителя на механизмы.</p>
+        </div>
+      </article>
+      <article class="v-card v-card--foto v-card--largo">
+        <img src="assets/img/b4.webp" alt="Выдвижной ящик с дубовыми разделителями для приборов и тарелок" loading="lazy" width="1400" height="775">
+        <div>
+          <h3>Неограниченные изменения</h3>
+          <p>Правим проект сколько нужно, пока не запустили производство. Бесплатно.</p>
+        </div>
+      </article>
+      <article class="v-card v-card--garantia">
+        <img src="assets/img/v_garantia.webp" alt="Гарантийный талон с печатью и ключи на каменной столешнице" loading="lazy" width="900" height="1200">
+        <div>
+          <span class="v-num" aria-hidden="true">5<small>лет</small></span>
+          <h3>Гарантия по договору</h3>
+          <p>На корпуса и фасады. Регулировка в течение первого года — бесплатно.</p>
+        </div>
+      </article>
+      <article class="v-card v-card--largo v-card--escuro">
+        <div>
+          <h3>Удалённый расчёт</h3>
+          <p>Пришлите план квартиры или фото стены с размерами. Дизайнер сделает 3D-проект и смету без выезда.</p>
+          <a class="btn btn--cheio js-whats" href="#" data-texto="Хочу удалённый расчёт кухни — пришлю план.">Обсудить проект</a>
+        </div>
+        <img src="assets/img/b5_m.webp" alt="Рабочее место дизайнера: 3D-проект кухни на мониторе и образцы фасадов" loading="lazy" width="700" height="387">
+      </article>
+    </div>
+  </section>
+
+  <!-- ── Материалы: вкладки + точки ────────────────────────────────── -->
+  <section class="painel mat revelar" id="materials">
+    <div class="mat-topo">
+      <h2>Используем только проверенные материалы</h2>
+      <div class="mat-tabs" role="tablist" aria-label="Материалы">
+        <button role="tab" type="button" data-tab="0" aria-selected="true">Фасады</button>
+        <button role="tab" type="button" data-tab="1" aria-selected="false">Столешницы</button>
+        <button role="tab" type="button" data-tab="2" aria-selected="false">Фурнитура</button>
+      </div>
+    </div>
+    <div class="mat-palco">
+      <figure class="mat-foto ativo" data-tab="0" data-titulo="Фасады" data-tags="МДФ|Эмаль|Шпон|Fenix">
+        <img src="assets/img/b2.webp" alt="Образцы фасадов: шпон дуба, графит, бежевый, шалфей" loading="lazy" width="1400" height="774">
+        <button class="ponto" type="button" style="--x:31%;--y:44%" data-info="Шпон дуба и ореха: натуральный рисунок дерева под матовым лаком.">1</button>
+        <button class="ponto" type="button" style="--x:44%;--y:34%" data-info="Суперматовые МДФ: не остаются отпечатки пальцев, мелкие царапины убираются теплом.">2</button>
+        <button class="ponto" type="button" style="--x:60%;--y:34%" data-info="Эмаль по RAL и NCS: любой цвет, который вы покажете на образце.">3</button>
+        <button class="ponto" type="button" style="--x:76%;--y:48%" data-info="Fenix — нанопластик: тёплый на ощупь, матовый, не боится горячего и царапин.">4</button>
+      </figure>
+      <figure class="mat-foto" data-tab="1" data-titulo="Столешницы" data-tags="Кварц|Кварцит|Компакт-плита">
+        <img src="assets/img/b3.webp" alt="Торец столешницы из кварцита с подстольной мойкой" loading="lazy" width="1400" height="774">
+        <button class="ponto" type="button" style="--x:60%;--y:66%" data-info="Кварцит и кварц толщиной 12–20 мм: не боятся горячего и красного вина.">1</button>
+        <button class="ponto" type="button" style="--x:42%;--y:30%" data-info="Подстольная мойка: шов не собирает грязь, край камня полируем.">2</button>
+      </figure>
+      <figure class="mat-foto" data-tab="2" data-titulo="Фурнитура" data-tags="Blum|Доводчики|Организаторы">
+        <img src="assets/img/b4.webp" alt="Ящик с доводчиком и дубовыми организаторами" loading="lazy" width="1400" height="775">
+        <button class="ponto" type="button" style="--x:24%;--y:66%" data-info="Направляющие полного выдвижения с доводчиком, нагрузка до 70 кг.">1</button>
+        <button class="ponto" type="button" style="--x:50%;--y:36%" data-info="Организаторы из массива дуба под ваши приборы и тарелки.">2</button>
+      </figure>
+      <div class="mat-info" aria-live="polite">
+        <b class="mat-titulo">Фасады</b>
+        <p class="mat-texto">Нажмите на точку на фото, чтобы узнать подробности.</p>
+        <div class="mat-tags"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Этапы + телефон ───────────────────────────────────────────── -->
+  <section class="painel revelar" id="steps">
+    <div class="etapas-sec">
+      <div>
+        <span class="rotulo">Схема работы</span>
+        <h2>Прозрачность на&nbsp;каждом этапе</h2>
+        <ol class="passos">
+          <li class="ativo" data-p="0"><i aria-hidden="true">01</i><div><b>Заявка</b><span>Оставляете заявку на сайте или пишете в WhatsApp</span></div></li>
+          <li data-p="1"><i aria-hidden="true">02</i><div><b>Замер</b><span>Приезжает замерщик или считаем удалённо по плану</span></div></li>
+          <li data-p="2"><i aria-hidden="true">03</i><div><b>3D-проект</b><span>Бесплатно рисуем кухню и согласуем каждую деталь</span></div></li>
+          <li data-p="3"><i aria-hidden="true">04</i><div><b>Договор</b><span>Фиксируем цену и срок, вносите 50% предоплаты</span></div></li>
+          <li data-p="4"><i aria-hidden="true">05</i><div><b>Монтаж</b><span>Доставляем и собираем кухню, вы оплачиваете остаток</span></div></li>
+        </ol>
+      </div>
+      <div class="fone" aria-hidden="true">
+        <div class="fone-tela">
+          <div class="fone-topo"><b>DASTAR</b><span>Заказ №2418</span></div>
+          <div class="fone-status"><span>Статус</span><b class="fone-etapa">Заявка принята</b></div>
+          <div class="fone-barra"><i></i></div>
+          <ul class="fone-lista">
+            <li>Заявка</li><li>Замер</li><li>3D-проект</li><li>Договор</li><li>Монтаж</li>
+          </ul>
+          <div class="fone-msg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────────────────────── -->
+  <section class="painel painel--claro revelar" id="faq">
+    <div class="painel-topo">
+      <div>
+        <span class="rotulo">FAQ</span>
+        <h2>Отвечаем на&nbsp;вопросы</h2>
+      </div>
+      <p class="painel-nota">Не нашли ответа? Задайте вопрос дизайнеру — он перезвонит и проконсультирует.</p>
+    </div>
+    <div class="faq-painel">
+        <figure class="consultor">
+          <img src="assets/img/designer.webp" alt="Арман, ведущий дизайнер DASTAR, с образцом фасада из дуба" loading="lazy" width="900" height="1200">
+          <figcaption>
+            <b>Арман</b>
+            <span>Ведущий дизайнер · 9 лет проектирует кухни</span>
+            <a class="btn btn--cheio js-whats" href="#" data-texto="Хочу задать вопрос дизайнеру Арману.">Задать вопрос дизайнеру</a>
+          </figcaption>
+        </figure>
+      <div class="faq">
+        <details open><summary>Что нужно для точного замера?</summary><p>Готовые стены и пол, а ещё лучше — понимание, где будут мойка, плита и розетки. Если ремонт ещё идёт, замерщик подскажет, куда вывести воду и электрику.</p></details>
+        <details><summary>Сколько времени занимает изготовление кухни?</summary><p>Обычно 20–35 рабочих дней после подписания договора, зависит от фасадов и столешницы. Эмаль и шпон делаются дольше ЛДСП, камень режут по шаблону после монтажа корпусов.</p></details>
+        <details><summary>Как подготовиться к монтажу?</summary><p>Освободите кухню и подготовьте выводы воды и розетки по схеме дизайнера. Технику можно купить заранее — встроим её при монтаже.</p></details>
+        <details><summary>Как происходит оплата?</summary><p>50% при подписании договора, остаток — после монтажа. Картой, переводом или в рассрочку через банк-партнёр.</p></details>
+        <details><summary>Вы работаете за пределами Алматы?</summary><p>Да, по Алматинской области и в Конаеве. Доставку и выезд монтажников считаем отдельно.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Бесплатная консультация ───────────────────────────────────── -->
+  <section class="painel chamada revelar" id="contact">
+    <img class="chamada-foto" src="assets/img/b9.webp" alt="" loading="lazy" width="1400" height="775">
+    <div class="chamada-texto">
+      <span class="rotulo">Шоурум в Алматы</span>
+      <h2>Бесплатная консультация</h2>
+      <p>Оставьте телефон: обсудим планировку, бюджет и материалы. Можно приехать в шоурум и потрогать фасады и камень руками.</p>
+      <form class="mini-form js-form" data-tipo="contato" novalidate>
+        <label class="campo"><span class="sr">Телефон</span><input name="tel" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+        <button class="btn btn--cheio" type="submit">Отправить</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── Вам также может пригодиться ───────────────────────────────── -->
+  <section class="painel revelar" id="more">
+    <h2 class="titulo-sec">Вам также может пригодиться</h2>
+    <div class="extras">
+      <a class="extra extra--alto js-whats" href="#" data-texto="Интересует гардеробная система.">
+        <img src="assets/img/b7.webp" alt="Гардеробная с открытыми полками и подсветкой" loading="lazy" width="1400" height="774">
+        <span class="extra-tag">Гардеробные</span>
+        <b>Гардеробные системы под потолок</b>
+      </a>
+      <a class="extra js-whats" href="#" data-texto="Интересуют встроенные шкафы.">
+        <img src="assets/img/b6.webp" alt="Встроенный шкаф с раздвижными дверями из дуба в спальне" loading="lazy" width="1400" height="774">
+        <span class="extra-tag">Шкафы</span>
+        <b>Встроенные шкафы с раздвижными дверями</b>
+      </a>
+      <a class="extra js-whats" href="#" data-texto="Интересует мебель для гостиной.">
+        <img src="assets/img/b8.webp" alt="ТВ-зона из графитовых шкафов и дубовых полок" loading="lazy" width="1400" height="774">
+        <span class="extra-tag">Гостиная</span>
+        <b>ТВ-зоны и стеллажи в стиле кухни</b>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Промо: сайт под ваш бизнес ────────────────────────────────── -->
+  <section class="painel promo revelar">
+    <div>
+      <span class="rotulo">Это демо-сайт</span>
+      <h2>Хотите такой же сайт для своего мебельного бизнеса?</h2>
+      <p>Кухня собирается при прокрутке, калькулятор, каталог и заявки сразу в WhatsApp. Сделаем под ваши проекты, цены и фирменный стиль.</p>
+    </div>
+    <a class="btn btn--cheio promo-btn js-whats" href="#">Хочу такой сайт</a>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <span>© <span data-ano>2026</span> DASTAR · кухни на заказ · Алматы</span>
+  <a href="tel:+77075434328">+7 (707) 543-43-28</a>
+</footer>
+
+<!-- Окно проекта -->
+<dialog class="modal" id="projeto" aria-labelledby="pj-nome">
+  <button class="modal-fechar" type="button" data-fechar aria-label="Закрыть">×</button>
+  <div class="pj">
+    <img class="pj-foto" src="" alt="" width="1400" height="774">
+    <div class="pj-info">
+      <span class="rotulo pj-bairro"></span>
+      <h2 id="pj-nome"></h2>
+      <p class="pj-texto"></p>
+      <dl class="pj-dados"></dl>
+      <a class="btn btn--cheio pj-whats" href="#" target="_blank" rel="noopener">Хочу похожую кухню</a>
+      <p class="pj-nota">Цена примерная: зависит от размеров и техники.</p>
+    </div>
+  </div>
+</dialog>
+
+<!-- Квиз «Рассчитать кухню» -->
+<dialog class="modal modal--quiz" id="quiz" aria-label="Расчёт стоимости кухни">
+  <button class="modal-fechar" type="button" data-fechar aria-label="Закрыть">×</button>
+  <form class="quiz" novalidate>
+    <div class="quiz-topo">
+      <span class="quiz-passo">Шаг <b>1</b> из 5</span>
+      <div class="quiz-barra" aria-hidden="true"><i></i></div>
+    </div>
+    <fieldset class="quiz-q ativo">
+      <legend>Какая форма кухни нужна?</legend>
+      <div class="quiz-ops">
+        <label><input type="radio" name="Форма" value="Прямая"><span><svg viewBox="0 0 48 32" aria-hidden="true"><rect x="4" y="6" width="40" height="8"/></svg>Прямая</span></label>
+        <label><input type="radio" name="Форма" value="Угловая"><span><svg viewBox="0 0 48 32" aria-hidden="true"><path d="M4 6h40v8H12v14H4z"/></svg>Угловая</span></label>
+        <label><input type="radio" name="Форма" value="П-образная"><span><svg viewBox="0 0 48 32" aria-hidden="true"><path d="M4 6h40v22h-8V14H12v14H4z"/></svg>П-образная</span></label>
+        <label><input type="radio" name="Форма" value="С островом"><span><svg viewBox="0 0 48 32" aria-hidden="true"><rect x="4" y="4" width="40" height="7"/><rect x="14" y="19" width="20" height="8"/></svg>С островом</span></label>
+      </div>
+    </fieldset>
+    <fieldset class="quiz-q">
+      <legend>Примерная длина кухни</legend>
+      <p>Сумма всех сторон вдоль стен. Точно измерит замерщик.</p>
+      <div class="quiz-ops">
+        <label><input type="radio" name="Длина" value="до 3 м"><span>до 3 м</span></label>
+        <label><input type="radio" name="Длина" value="3–4 м"><span>3–4 м</span></label>
+        <label><input type="radio" name="Длина" value="4–6 м"><span>4–6 м</span></label>
+        <label><input type="radio" name="Длина" value="больше 6 м"><span>больше 6 м</span></label>
+      </div>
+    </fieldset>
+    <fieldset class="quiz-q">
+      <legend>Какие фасады нравятся?</legend>
+      <div class="quiz-ops">
+        <label><input type="radio" name="Фасады" value="ЛДСП"><span>ЛДСП — практично и недорого</span></label>
+        <label><input type="radio" name="Фасады" value="МДФ, эмаль"><span>МДФ в эмали — любой цвет</span></label>
+        <label><input type="radio" name="Фасады" value="Шпон"><span>Натуральный шпон дуба или ореха</span></label>
+        <label><input type="radio" name="Фасады" value="Пока не знаю"><span>Пока не знаю, нужен совет</span></label>
+      </div>
+    </fieldset>
+    <fieldset class="quiz-q">
+      <legend>Когда нужна кухня?</legend>
+      <div class="quiz-ops">
+        <label><input type="radio" name="Срок" value="В течение месяца"><span>В течение месяца</span></label>
+        <label><input type="radio" name="Срок" value="Через 1–3 месяца"><span>Через 1–3 месяца</span></label>
+        <label><input type="radio" name="Срок" value="Ремонт ещё идёт"><span>Ремонт ещё идёт</span></label>
+        <label><input type="radio" name="Срок" value="Пока просто считаю"><span>Пока просто считаю</span></label>
+      </div>
+    </fieldset>
+    <fieldset class="quiz-q quiz-ultimo">
+      <legend>Куда прислать расчёт?</legend>
+      <p>Дизайнер посчитает стоимость по вашим ответам и пришлёт в WhatsApp в течение часа.</p>
+      <div class="quiz-fim">
+        <div class="quiz-presente"><b aria-hidden="true">✦</b> <span>В подарок — <b>3D-проект кухни</b> бесплатно</span></div>
+        <label class="campo"><span class="sr">Имя</span><input name="nome" autocomplete="name" placeholder="Ваше имя"></label>
+        <label class="campo"><span class="sr">Телефон</span><input name="tel" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+        <button class="btn btn--cheio" type="submit">Получить расчёт</button>
+        <p class="form-status" role="status"></p>
+      </div>
+    </fieldset>
+    <div class="quiz-nav">
+      <button class="link-btn quiz-voltar" type="button">← Назад</button>
+      <button class="btn btn--linha quiz-seguir" type="button" disabled>Далее →</button>
+    </div>
+  </form>
+</dialog>
+
+<a class="whats js-whats" href="#" aria-label="Написать в WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.600-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.200 13.8 2.200 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
+</a>
+
+<script src="config.js?v=1"></script>
+<script src="dados.js?v=1"></script>
+<script src="app.js?v=4"></script>
+</body>
+</html>
